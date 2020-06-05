@@ -125,7 +125,7 @@ class TableauReport extends React.Component {
         !this.state.filters.hasOwnProperty(key) ||
         !this.compareArrays(this.state.filters[key], filters[key])
       ) {
-        promises.push(
+        this.sheet && promises.push(
           this.sheet.applyFilterAsync(key, filters[key], REPLACE)
         );
       }

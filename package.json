@@ -1,5 +1,5 @@
 {
-  "name": "tableau-react",
+  "name": "tableau-react-ratnesh",
   "version": "2.0.0-beta.0",
   "description": "React component for rendering tableau reports using tableau javascript API.",
   "main": "dist/index.js",

@@ -188,7 +188,7 @@ var TableauReport = function (_React$Component) {
 
       for (var key in filters) {
         if (!this.state.filters.hasOwnProperty(key) || !this.compareArrays(this.state.filters[key], filters[key])) {
-          promises.push(this.sheet.applyFilterAsync(key, filters[key], REPLACE));
+          this.sheet && promises.push(this.sheet.applyFilterAsync(key, filters[key], REPLACE));
         }
       }
 
